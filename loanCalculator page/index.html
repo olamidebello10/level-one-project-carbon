@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Screenshot 2026-06-10 094359.png" type="">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- styling header - start -->
+     <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="http://127.0.0.1:5500/Contact/index.html">
+          <img src="/Contact/image.png" alt="Carbon" />
+        </a>
+
+
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label class="menu-button" for="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="nav-menu">
+          
+
+          <div class="nav-item has-dropdown">
+            <button class="nav-trigger" type="button">Features</button>
+            <div class="dropdown features-dropdown">
+              <div class="dropdown-arrow"></div>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-loans"></span>
+                <span>
+                  <strong>Loans</strong>
+                  <small>Instant loans whenever you need it</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-pay"></span>
+                <span>
+                  <strong>Payments</strong>
+                  <small>All your payments, in one place</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-card"></span>
+                <span>
+                  <strong>Cards</strong>
+                  <small>Online and offline payments with cards</small>
+                </span>
+              </a>
+               <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-save"></span>
+                <span>
+                  <strong>Savings</strong>
+                  <small>Earn returns on savings on Carbon</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <!-- <span class="drop-icon icon-report"></span> -->
+                <span>
+                  <!-- <strong>Credit report</strong> -->
+                  <!-- <small>Keep track of your credit history</small> -->
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-report"></span>
+                <span>
+                  <strong>Credit report</strong>
+                  <small>Keep track of your credit history</small>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-item has-dropdown">
+            <button class="nav-trigger" type="button">Company</button>
+            <div class="dropdown company-dropdown">
+              <div class="dropdown-arrow"></div>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-about"></span>
+                <span>
+                  <strong>About us</strong>
+                  <small>Providing financial access to everyone</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-blog"></span>
+                <span>
+                  <strong>Blog</strong>
+                  <small>Get Carbon news and updates</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-career"></span>
+                <span>
+                  <strong>Careers</strong>
+                  <small>Build the best bank in Africa</small>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <a class="nav-link" href="#">Loan Calculator</a>
+          <a class="nav-link" href="../faqs.html">FAQ</a>
+
+          <div class="nav-item has-dropdown">
+            <button class="nav-trigger" type="button">Help</button>
+            <div class="dropdown help-dropdown">
+              <div class="dropdown-arrow"></div>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-knowledge"></span>
+                <span>
+                  <strong>Knowledge base</strong>
+                  <small>Get answers to common issues</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-contact"></span>
+                <span>
+                  <strong>Contact</strong>
+                  <small>Like to reach out? Get in touch with us</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-community"></span>
+                <span>
+                  <strong>Community</strong>
+                  <small>Join our community and get updated</small>
+                </span>
+              </a>
+              <a href="#" class="dropdown-link">
+                <span class="drop-icon icon-warning"></span>
+                <span>
+                  <strong>Report account</strong>
+                  <small>Report suspicious activity on your account</small>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <a class="signup-btn" href="../signUp.html">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+        <!-- styling header - end -->
+
+        <!-- styling for the carbon loan calculator - start -->
+             <section class="carbon-calc-section">
+      <div class="carbon-calc-container">
+        <div class="carbon-calc-copy">
+          <h1>Carbon Paylater Loan Calculator</h1>
+          <p>Explore your loan options with our easy-to-use calculator</p>
+        </div>
+
+        <form class="carbon-calc-card">
+          <div class="carbon-field">
+            <label for="monthly-income">What's your Monthly Income</label>
+            <input id="monthly-income" type="number" placeholder="e.g 10000" />
+          </div>
+
+          <div class="carbon-field">
+            <label for="registration-duration">How long have you been registered on Carbon?</label>
+            <select id="registration-duration">
+              <option selected>Select one...</option>
+              <option>Less than 3 months</option>
+              <option>3 - 6 months</option>
+              <option>More than 6 months</option>
+            </select>
+          </div>
+
+          <div class="carbon-field">
+            <label for="employment-status">What's your employment status?</label>
+            <select id="employment-status">
+              <option selected>Select one...</option>
+              <option>Employed</option>
+              <option>Self-employed</option>
+              <option>Business owner</option>
+            </select>
+          </div>
+
+          <fieldset class="carbon-radio-group">
+            <legend>
+              In the past 2 years, have you taken out any loans with other lenders,
+              and if so, do those loans together total N5 million or more?
+            </legend>
+            <label>
+              <input type="radio" name="large-loan" value="yes" />
+              <span></span>
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="large-loan" value="no" />
+              <span></span>
+              No
+            </label>
+          </fieldset>
+
+          <fieldset class="carbon-radio-group compact">
+            <legend>Have you missed any of your loan repayments in the last 2 years?</legend>
+            <label>
+              <input type="radio" name="missed-repayment" value="yes" />
+              <span></span>
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="missed-repayment" value="no" />
+              <span></span>
+              No
+            </label>
+          </fieldset>
+
+          <div class="carbon-field">
+            <label for="kyc-level">What's your KYC level on the Carbon app?</label>
+            <select id="kyc-level">
+              <option selected>Select one...</option>
+              <option>Tier 1</option>
+              <option>Tier 2</option>
+              <option>Tier 3</option>
+            </select>
+          </div>
+
+          <div class="carbon-calc-actions">
+            <button type="button" class="calculate-btn">Calculate</button>
+            <button type="reset" class="clear-btn">Clear</button>
+          </div>
+
+          <div class="carbon-payment-card">
+            <h2>Your Monthly Payment</h2>
+            <strong>&#8358;</strong>
+            <dl>
+              <div>
+                <dt>Principal:</dt>
+                <dd>&#8358;</dd>
+              </div>
+              <div>
+                <dt>Interest:</dt>
+                <dd>&#8358;</dd>
+              </div>
+              <div>
+                <dt>Total Repayment:</dt>
+                <dd>&#8358;</dd>
+              </div>
+            </dl>
+            <a href="../signUp.html">Apply Now</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- styling for the carbon loan calculator - end -->
+
+         <!-- styling the getting started w the carbon section - start -->
+    <section class="getting-started-section">
+      <div class="getting-started-container">
+        <h2 class="getting-started-header">
+          Getting started with the Carbon app
+        </h2>
+
+        <div class="getting-started-cards">
+          <article class="getting-started-card">
+            <div class="getting-card-top">
+              <span class="step-badge">01</span>
+              <h3>Download the app</h3>
+              <p>
+                Get the Carbon App on Google Play Store for Android or App Store
+                for iOS.
+              </p>
+            </div>
+            <div class="getting-card-bottom store-panel">
+              <a href="https://app.adjust.com/n1z55dp">
+                <img
+                  src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/6454ea3cf1c1c66dc0359d17_Apple%20Store%20icon.svg"
+                  alt="Download on the App Store"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lenddo.mobile.paylater"
+              >
+                <img
+                  src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/6454ea41a1a2ca2c84595489_Google%20Play%20Store%20icon.svg"
+                  alt="Get it on Google Play"
+                />
+              </a>
+            </div>
+          </article>
+
+          <article class="getting-started-card">
+            <div class="getting-card-top">
+              <span class="step-badge">02</span>
+              <h3>Register within minutes</h3>
+              <p>
+                Tell us a few details about you to help us create your Carbon
+                account quickly.
+              </p>
+            </div>
+            <div class="getting-card-bottom phone-panel">
+              <img
+                src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/6454ea40ef6fe46a6825abe2_step%202.webp"
+                alt="Create your Carbon account screen"
+              />
+            </div>
+          </article>
+
+          <article class="getting-started-card">
+            <div class="getting-card-top">
+              <span class="step-badge">03</span>
+              <h3>Start banking</h3>
+              <p>
+                You’re ready to go. Carry out all your banking transactions
+                within the app.
+              </p>
+            </div>
+            <div class="getting-card-bottom phone-panel">
+              <img
+                src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/6454ea409b6df40d2c625d8f_step%203.webp"
+                alt="Carbon banking dashboard screen"
+              />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- styling the getting started w the carbon section - end -->
+
+        <!-- styling the footer - start -->
+    <footer class="carbon-home-footer">
+      <div class="footer-main">
+        <div class="footer-brand-col">
+          <img
+            class="footer-logo"
+            src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/6453eb55073030cb720870f7_carbon-logo-white.webp"
+            alt="Carbon"
+          />
+
+          <button class="country-select" type="button">
+            <img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf82_Image%2048.svg"
+              alt=""
+            />
+            Nigeria
+            <span>⌄</span>
+          </button>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="mailto:support@getcarbon.co">support@getcarbon.co</a>
+            <a href="tel:02013301808">02013301808</a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h3>Features</h3>
+          <a href="#">Carbon account</a>
+          <a href="#">Payments</a>
+          <a href="#">Cards</a>
+          <a href="#">Carbon Circles</a>
+          <a href="#">Investments</a>
+          <a href="#">Credit report</a>
+          <a href="#">Loans</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h3>Company</h3>
+          <a href="#">About us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h3>Help</h3>
+          <a href="../faqs.html">FAQ</a>
+          <a href="#">Knowledge base</a>
+          <a href="#">Contact</a>
+          <a href="#">Community</a>
+        </div>
+
+        <div class="footer-links-col footer-legal-col">
+          <h3>Legal</h3>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Whistleblowing</a>
+          <img
+            class="audit-badge"
+            src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/69b024541b9fe8f08506f688_Screenshot%202026-03-10%20at%203.00.21%E2%80%AFPM.png"
+            alt="Carbon audit badge"
+          />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="store-badges">
+          <a href="#">
+            <img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf89_Download_on_the_App_Store_Badge.svg"
+              alt="Download on the App Store"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf86_Google_Play_Store_badge_EN.svg"
+              alt="Get it on Google Play"
+            />
+          </a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#"
+            ><img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf83_008-facebook.svg"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf8b_001-twitter.svg"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf8a_011-instagram.svg"
+              alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf88_007-youtube.svg"
+              alt="YouTube"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf87_010-linkedin.svg"
+              alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn.prod.website-files.com/6453bf08503f6d73d5ffe98e/645e07941b9dbaee684fcf84_006-tumblr.svg"
+              alt="Medium"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-legal-text">
+        <p>
+          ©2026 Carbon is a financial service provided by Carbon Microfinance
+          Bank (RC 1642222), licensed and regulated by the Central Bank of
+          Nigeria (CBN). We empower individuals with credit, simple payments
+          solutions, high-yield investment opportunities, and easy-to-use tools
+          for personal financial management. We are a global company of over 90
+          employees with a presence in Nigeria.
+        </p>
+        <p>
+          Registered address: Plot 642C Akin Adesola St. Lagos 101233 Nigeria 🇳🇬
+        </p>
+      </div>
+    </footer>
+    <!-- styling the footer - end -->
+</body>
+</html>
